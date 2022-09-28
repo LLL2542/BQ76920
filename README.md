@@ -10,8 +10,6 @@ This library is made for the STM32 HAL (Hardware Abstraction Library) platform. 
 ## Usage/Examples
 
 ```javascript
-
-function App() {
 /* USER CODE BEGIN Includes */
 #include "BQ76920.h"
 /* USER CODE BEGIN PV */
