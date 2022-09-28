@@ -1,9 +1,17 @@
+
 # BQ76920
+
 This library is made for the STM32 HAL (Hardware Abstraction Library) platform. This is a Battery Monitoring AFE library from TEXAS for use with STM32XXX microcontroller.
 
-forthebadge
 
-Example
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+## Usage/Examples
+
+```javascript
+
+function App() {
 /* USER CODE BEGIN Includes */
 #include "BQ76920.h"
 /* USER CODE BEGIN PV */
@@ -15,7 +23,7 @@ int main(void)
     MX_I2C2_Init();
     BMS.i2cHandle = &hi2c2;
     BMS.bootPort = GPIOC;
-    BMS.bootPin  = GPIO_PIN_9;
+    BMS.bootPin  = GPIO_PIN_9
     
     /* USER INIT*/
     BQ76920_Initialise(&BMS,&hi2c2);
@@ -51,3 +59,26 @@ int main(void)
     }
     /* USER CODE END 3 */
 }
+```
+
+
+    
+## Features
+- Compatible with 4S Litium Battery 
+- Get Cell Voltage
+- Get Battery pack Voltage
+- Get Battery pack Current
+- Get Die Temperature
+- Enable/Disable Balancing mode
+- Shutdown
+
+
+
+## Authors
+
+- [@NAWAT.L](https://www.github.com/LLL2542)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
